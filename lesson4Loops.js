@@ -9,9 +9,12 @@
 
 var height = +prompt("Enter number", '');
 var star = '';
-for (var i = 0; i<height; i++){
-    star+="*";
-    console.log(star);
+for (var i = 0; i<=height; i++){
+    for (var j = 0; j<i; j++) {
+        star+="*";
+    }
+    star+='\n';
 }
+console.log(star+'\n');
 
 
